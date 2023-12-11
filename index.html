@@ -1,0 +1,129 @@
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Личный сайт-портфолио Горбача Андрея">
+    <meta name="keywords" content="Горбач Андрей, Gorbach Andrew, горбач, doged, web разработчик, фрилансер, backend developer, gorbach, догед, Горбач">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <title id="title">you've been doged</title>
+</head>
+
+<body>
+    <div class="noscript">
+        <noscript>
+            <div>
+                switching themes and language is not available due to the inability to execute JavaScript code
+                <br>
+                переключение тем и языка недоступно из-за невозможности выполнения JavaScript кода
+            </div>
+        </noscript>
+    </div>
+    <header>
+        <p class="switcher unselectable" id="theme_switcher_btn">dark</p>
+        <nav class="desktop"> 
+        </nav>
+        <nav class="mobile">
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <p class="switcher unselectable" id="lang_switcher_btn">eng</p>
+    </header>
+
+    <main>
+        <section class="whoami">
+            <div class="left">
+                <h2 class="whoami_full_name">Gorbach<br>Andrew</h2>
+                <p><i class="fa-solid fa-location-dot"></i><span class="location">Moscow, Russia</span></p>
+                <p class="whoami_short_about">Hello everyone, I am developing a backend and a frontend for websites and electronics.<br>Now I am studying in 1576's Aviation class </p>
+                <hr>
+                <div class="social">
+                    <a href="mailto:svpra.prog@gmail.ru">
+                        <div class="social_item mail"></div>
+                    </a>
+                    <a href="https://github.com/svpra">
+                        <div class="social_item github"></div>
+                    </a>
+                    <a href="https://t.me/iospam">
+                        <div class="social_item telegram"></div>
+                    </a>
+                    <a href="https://vk.com/durov">
+                        <div class="social_item vk"></div>
+                    </a>
+                </div>
+            </div>
+            <img class="iam" src="assets/img/i.jpg" alt="igor">
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="about_title">About</h2>
+            <div class="about_div university" style="display: block;">
+                <p class="about_university">I am currently studying at 1576</p>
+            </div>
+            <div class="about_div learn" style="display: none;">
+                <p class="about_learn">I am engaged in programming</p>
+            </div>
+            <div class="about_div foss" style="display: none;">
+                <p class="about_foss">I use, love and contribute to OpenSource 💕</p>
+            </div>
+            <div class="toggle_about">
+                <div id="toggle_item_first" class="toggle_about_item university active"></div>
+                <div id="toggle_item_second" class="toggle_about_item university"></div>
+                <div id="toggle_item_third" class="toggle_about_item university"></div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2 class="contact_title">Contact with me</h2>
+        <h3 class="contact_short_description">You can find me on any of these social networks</h3>
+        <a href="mailto:svpra.prog@gmail.ru" class="mail_link">or write to me on my email</a>
+        <div class="social">
+            <a href="mailto:igor.kuzmenkov.05@mail.ru">
+                <div class="social_item mail"></div>
+            </a>
+            <a href="https://github.com/svpra">
+                <div class="social_item github"></div>
+            </a>
+            <a href="https://t.me/iospam">
+                <div class="social_item telegram"></div>
+            </a>
+            <a href="https://vk.com/durov">
+                <div class="social_item vk"></div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/about_switcher.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('.menu-items a');
+        var checkbox = document.querySelector('.checkbox');
+
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                checkbox.checked = false;
+            });
+        });
+    });
+</script>
+
+
+</body></html>
